@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1AF0CB225BC93B000DC348 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AF0CA225BC93B000DC348 /* MyView.swift */; };
 		DF225E90225A65A6007A9928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF225E8F225A65A6007A9928 /* AppDelegate.swift */; };
 		DF225E92225A65A6007A9928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF225E91225A65A6007A9928 /* ViewController.swift */; };
 		DF225E95225A65A6007A9928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF225E93225A65A6007A9928 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF1AF0CA225BC93B000DC348 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		DF225E8C225A65A6007A9928 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF225E8F225A65A6007A9928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF225E91225A65A6007A9928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				DF225E96225A65AE007A9928 /* Assets.xcassets */,
 				DF225E98225A65AE007A9928 /* LaunchScreen.storyboard */,
 				DF225E9B225A65AE007A9928 /* Info.plist */,
+				DF1AF0CA225BC93B000DC348 /* MyView.swift */,
 			);
 			path = DrawingApp;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1AF0CB225BC93B000DC348 /* MyView.swift in Sources */,
 				DF225E92225A65A6007A9928 /* ViewController.swift in Sources */,
 				DF225E90225A65A6007A9928 /* AppDelegate.swift in Sources */,
 			);
