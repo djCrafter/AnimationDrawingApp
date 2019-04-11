@@ -95,7 +95,7 @@
                                 <rect key="frame" x="16" y="147.5" width="382" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="9Mr-AP-WNc"/>
+                                    <constraint firstAttribute="width" priority="750" constant="700" id="9Mr-AP-WNc"/>
                                     <constraint firstAttribute="width" secondItem="v60-SD-iYv" secondAttribute="height" multiplier="5:8" id="oVU-Oh-6Be"/>
                                 </constraints>
                             </view>

@@ -92,5 +92,7 @@ class MyView : UIView {
         let attribute: [NSAttributedString.Key : Any] = [.font: UIFont.preferredFont(forTextStyle: .body).withSize(20)]
         (text as NSString).draw(in: textRect, withAttributes: attribute)
     }
+    
+    
 }
 
