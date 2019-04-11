@@ -17,12 +17,102 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-lB-vwa">
+                                <rect key="frame" x="20" y="44" width="374" height="280.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="U6C-2x-qg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="127.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-rH-Y5T" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-nO-aOI" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="137.5" y="0.0" width="99" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfQ-n0-ezi" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="274.5" y="0.0" width="99.5" height="127.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="WT0-if-1Dk">
+                                        <rect key="frame" x="0.0" y="153.5" width="374" height="127"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-6O-TsS" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="127"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-JB-YZ1" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="137.5" y="0.0" width="99" height="127"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-xS-cQg" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                                <rect key="frame" x="274.5" y="0.0" width="99.5" height="127"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sides">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="8aw-0g-LC1"/>
+                                    <constraint firstAttribute="width" secondItem="TXs-lB-vwa" secondAttribute="height" multiplier="4:3" id="jHD-Ww-o2s"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TXs-lB-vwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N3o-cj-Hbf"/>
+                            <constraint firstItem="TXs-lB-vwa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UZx-VH-Gyo"/>
+                            <constraint firstItem="TXs-lB-vwa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XLA-fL-2B1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXs-lB-vwa" secondAttribute="trailing" constant="19.5" id="dIr-9E-AnD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="myViews" destination="vcE-rH-Y5T" collectionClass="NSMutableArray" id="ACv-k9-v2Y"/>
+                        <outletCollection property="myViews" destination="UfQ-n0-ezi" collectionClass="NSMutableArray" id="Llf-Mx-aYf"/>
+                        <outletCollection property="myViews" destination="mYs-nO-aOI" collectionClass="NSMutableArray" id="oDR-wA-Shj"/>
+                        <outletCollection property="myViews" destination="5Hc-JB-YZ1" collectionClass="NSMutableArray" id="O8G-8X-jFF"/>
+                        <outletCollection property="myViews" destination="ISV-xS-cQg" collectionClass="NSMutableArray" id="N8i-QW-PO3"/>
+                        <outletCollection property="myViews" destination="kZk-6O-TsS" collectionClass="NSMutableArray" id="WKf-xb-wYR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
