@@ -12,9 +12,13 @@ import UIKit
 class MyView : UIView {
     
     @IBInspectable
-    var sides: Int = 0
+    var sides: Int = 0 {
+        didSet{
+            setNeedsDisplay(); setNeedsLayout()
+        }
+    }
     
-    var isViewBack = false {
+    var isViewBack = true {
         didSet{
             setNeedsDisplay(); setNeedsLayout()
         }

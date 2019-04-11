@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-lB-vwa">
-                                <rect key="frame" x="20" y="44" width="374" height="280.5"/>
+                                <rect key="frame" x="20" y="144" width="374" height="280.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="U6C-2x-qg9">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="127.5"/>
@@ -91,17 +91,27 @@
                                     <constraint firstAttribute="width" secondItem="TXs-lB-vwa" secondAttribute="height" multiplier="4:3" id="jHD-Ww-o2s"/>
                                 </constraints>
                             </stackView>
+                            <view hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="v60-SD-iYv" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="131" width="382" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TXs-lB-vwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N3o-cj-Hbf"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GvI-tr-C2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v60-SD-iYv" secondAttribute="trailing" constant="16" id="LFz-N5-1zy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v60-SD-iYv" secondAttribute="bottom" constant="225" id="MzM-vD-46P"/>
+                            <constraint firstItem="TXs-lB-vwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="N3o-cj-Hbf"/>
                             <constraint firstItem="TXs-lB-vwa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UZx-VH-Gyo"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XAh-ye-VhD"/>
                             <constraint firstItem="TXs-lB-vwa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XLA-fL-2B1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXs-lB-vwa" secondAttribute="trailing" constant="19.5" id="dIr-9E-AnD"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="m6y-rW-Rse"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="viewBack" destination="v60-SD-iYv" id="wpF-jJ-Uur"/>
                         <outletCollection property="myViews" destination="vcE-rH-Y5T" collectionClass="NSMutableArray" id="ACv-k9-v2Y"/>
                         <outletCollection property="myViews" destination="UfQ-n0-ezi" collectionClass="NSMutableArray" id="Llf-Mx-aYf"/>
                         <outletCollection property="myViews" destination="mYs-nO-aOI" collectionClass="NSMutableArray" id="oDR-wA-Shj"/>
