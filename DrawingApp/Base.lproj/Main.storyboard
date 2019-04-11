@@ -92,21 +92,26 @@
                                 </constraints>
                             </stackView>
                             <view hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="v60-SD-iYv" customClass="MyView" customModule="DrawingApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="131" width="382" height="506"/>
+                                <rect key="frame" x="16" y="147.5" width="382" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="800" id="9Mr-AP-WNc"/>
+                                    <constraint firstAttribute="width" secondItem="v60-SD-iYv" secondAttribute="height" multiplier="5:8" id="oVU-Oh-6Be"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="v60-SD-iYv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GvI-tr-C2s"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v60-SD-iYv" secondAttribute="trailing" constant="16" id="LFz-N5-1zy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v60-SD-iYv" secondAttribute="bottom" constant="225" id="MzM-vD-46P"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2C1-Vj-8Rt"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5iF-ka-BdC"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ia9-qq-Cnt"/>
                             <constraint firstItem="TXs-lB-vwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="N3o-cj-Hbf"/>
                             <constraint firstItem="TXs-lB-vwa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UZx-VH-Gyo"/>
-                            <constraint firstItem="v60-SD-iYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XAh-ye-VhD"/>
                             <constraint firstItem="TXs-lB-vwa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XLA-fL-2B1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TXs-lB-vwa" secondAttribute="trailing" constant="19.5" id="dIr-9E-AnD"/>
-                            <constraint firstItem="v60-SD-iYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="m6y-rW-Rse"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="v60-SD-iYv" secondAttribute="bottom" constant="16" id="eUY-GG-aQL"/>
+                            <constraint firstItem="v60-SD-iYv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="jac-pe-MfU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v60-SD-iYv" secondAttribute="trailing" constant="16" id="waT-G6-WEt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

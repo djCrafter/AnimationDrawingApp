@@ -35,9 +35,9 @@ class ViewController: UIViewController {
         if let figureSides = myView?.sides {
             viewBack.sides = figureSides
         }
-//        for myView in myViews {
-//            myView.isHidden = true
-//        }
+        for myView in myViews {
+            myView.isHidden = true
+        }
 //
         viewBack.isHidden = false
 
