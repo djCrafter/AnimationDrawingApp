@@ -13,6 +13,8 @@
 		DF225E95225A65A6007A9928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF225E93225A65A6007A9928 /* Main.storyboard */; };
 		DF225E97225A65AE007A9928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF225E96225A65AE007A9928 /* Assets.xcassets */; };
 		DF225E9A225A65AE007A9928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF225E98225A65AE007A9928 /* LaunchScreen.storyboard */; };
+		DF506FB82267BF2A00E3F237 /* MyViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF506FB72267BF2A00E3F237 /* MyViewAnimation.swift */; };
+		DFB3EE3F22678B0400889088 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3EE3E22678B0400889088 /* CardBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DF225E96225A65AE007A9928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF225E99225A65AE007A9928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF225E9B225A65AE007A9928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF506FB72267BF2A00E3F237 /* MyViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewAnimation.swift; sourceTree = "<group>"; };
+		DFB3EE3E22678B0400889088 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DF225E98225A65AE007A9928 /* LaunchScreen.storyboard */,
 				DF225E9B225A65AE007A9928 /* Info.plist */,
 				DF1AF0CA225BC93B000DC348 /* MyView.swift */,
+				DFB3EE3E22678B0400889088 /* CardBehavior.swift */,
+				DF506FB72267BF2A00E3F237 /* MyViewAnimation.swift */,
 			);
 			path = DrawingApp;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				DF1AF0CB225BC93B000DC348 /* MyView.swift in Sources */,
 				DF225E92225A65A6007A9928 /* ViewController.swift in Sources */,
+				DF506FB82267BF2A00E3F237 /* MyViewAnimation.swift in Sources */,
 				DF225E90225A65A6007A9928 /* AppDelegate.swift in Sources */,
+				DFB3EE3F22678B0400889088 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
