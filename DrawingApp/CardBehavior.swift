@@ -41,8 +41,7 @@ class CardBehavior: UIDynamicBehavior {
                 push.angle = (CGFloat.pi*2).arc4random
             }
         }
-        
-        
+                
        // push.angle = (2*CGFloat.pi).arc4random
         push.magnitude = CGFloat(1.0) + CGFloat(2.0).arc4random
         push.action = {[unowned push, weak self] in

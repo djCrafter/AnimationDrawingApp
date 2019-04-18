@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     private lazy var animator = UIDynamicAnimator(referenceView: view)
     private lazy var cardBehavior = CardBehavior(in: animator)
     
-    
+    var flipCount = 0
     
     
     override func viewDidLoad() {
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     private func eventsSubscription () {
         for i in 0..<myViews.count {
             myViews[i].addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tappedHandler(tap:))))
-         //   cardBehavior.addItem(myViews[i])
+            cardBehavior.addItem(myViews[i])
         }
         
         viewBack.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(viewBackTapHandler(tap:))))
@@ -68,36 +68,55 @@ class ViewController: UIViewController {
             animations: {[weak self] in
                 self?.viewBack.transform = CGAffineTransform.identity.scaledBy(x: 1, y: 1)
         })
-         viewBack.isHidden = false
     }
     
     
-    
     func stopViewMoving() {
+        viewBack.isHidden = false
         for view in myViews{
             view.isHidden = true
-            cardBehavior.removeItem(view)
+           cardBehavior.removeItem(view)
         }
     }
     
     func startViewMoving() {
+        viewBack.isHidden = true
         for view in myViews {
             view.isHidden = false
-            cardBehavior.addItem(view)
+           cardBehavior.addItem(view)
         }
     }
     
     
     @objc func viewBackTapHandler(tap: UITapGestureRecognizer) {
-      
+        switch tap.state {
+        case .ended:
             let myView = tap.view as? MyView
             
-            if myView!.isViewBack {
-            
-                myView?.isViewBack = false
-            } else {
-                myView?.isViewBack = true
-            }
+            UIView.transition(
+                with: viewBack,
+                duration: 0.6,
+                options: [.transitionFlipFromLeft],
+                animations: {
+                    myView?.isViewBack = !myView!.isViewBack
+                    self.flipCount += 1 },
+                completion: { [weak self] _ in
+                    if(self?.flipCount == 2){
+                        self?.flipCount = 0
+                        UIViewPropertyAnimator.runningPropertyAnimator(
+                            withDuration: 0.6,
+                            delay: 0,
+                            options: [],
+                            animations: {[weak self] in
+                                self?.viewBack.transform = CGAffineTransform.identity.scaledBy(x: 0.1, y: 0.1)
+                            }, completion: { _ in
+                                self?.startViewMoving()
+                        })
+                    }
+            })
+        default:
+            break
+        }        
     }
 
    
